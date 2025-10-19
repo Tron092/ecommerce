@@ -1,0 +1,24 @@
+## server configuration
+server:
+  port: 8080
+## application configuration
+spring:
+  application:
+    name: ecommerce
+## datasource configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/full-stack-ecommerce
+    username: root
+    password: my-secret-pw
+## JPA configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+## data REST configuration
+  data:
+    rest:
+      base-path: /api
